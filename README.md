@@ -15,8 +15,9 @@ Another good thing about this app is that you have a vast variety of audience. I
 
 **How the target audience will use it?**
 User can simply log into their computer. Then just go to "SA PHOTOGRAPHY" app.
-         1.Click on to "SA PHOTOGRAPHY" app
-         2.Then it will come up with three options of packages which are, 
+1. Click on to "SA PHOTOGRAPHY" app.
+2. Then it will come up with the option of displaying all the packages. So if user types display, it will display all the packages with all the options of it. 
+3. User will have an option to select a number to choose the package 
 * Signature Packages
 * Super Saver Packages
 * Wedding Film Packages
@@ -28,7 +29,7 @@ User can simply log into their computer. Then just go to "SA PHOTOGRAPHY" app.
 There are some features I want to share here which are as below  
 1. Choosing package  
 2. Selecting time 
-3. Selecting ing date
+3. Selecting date
 4. Making bookings 
 ####Choosing packages: 
 User can choose packages from the given options. They can see the prices while they are choosing. User will have multiple options in chosen package and will be able to select one from them. 

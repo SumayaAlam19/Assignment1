@@ -24,20 +24,22 @@ Cinematography_package = [Package.new("Standard 1", 650), Package.new("Standard 
 
 def display_all_packages (packages)
     packages.each do |package|
-    puts" #{package.name} and #{package.price}"
-end
+        puts" #{package.name} and $#{package.price}"
+    end
 
 end
 
 def adding (packages)
     packages.each_with_index do |package, index|
-        puts "#{index} #{package.name} and #{package.price}"
+        puts "#{index+1} #{package.name} and $#{package.price}"
     end
-    puts "Which do you want?"
-    input = gets.to_i
-
-    selected_package = packages[input]
-    $booking << selected_package
+    puts "Please Select a number to lock the package OR type exit to exit?"
+      input = gets.chomp
+if input != "exit"
+      selected_package = packages[input.to_i-1]
+      $booking << selected_package
+end
+      
 end
 
 $booking = []
@@ -45,27 +47,29 @@ program_running = true
 
 while program_running
 
-    puts "Please select a number to see the package type"
+    puts "Please type display to see all the options and then select a number to choose the package type.You can also type exit to exit "
     puts "1. Signature"
     puts "2. Super Saver"
     puts "3. Cinematography"
-    puts "display. To list all packages"
     puts "exit. To exit"
     package_type_choice = gets.chomp
+
     case package_type_choice
+    when "display"
+        puts "Displaying signature packages"
+        display_all_packages(Signature_package)
+
+        puts "Displaying super saver packages"
+        display_all_packages(Super_saver_package)
+
+        puts "Displaying cinematography packages"
+        display_all_packages(Cinematography_package)
     when "1"
         adding(Signature_package)
     when "2"
         adding(Super_saver_package)
     when "3"
         adding(Cinematography_package)
-    when "display"
-        puts "Signature packages:
-        #{display_all_packages(Signature_package)}"
-        puts "Super Saver packages:
-        #{display_all_packages(Super_saver_package)}"
-        puts"Cinematography packages:
-        #{display_all_packages(Cinematography_package)}"
     when "exit"
         program_running = false
     else
@@ -73,5 +77,18 @@ while program_running
     end
 end
 
-puts "Final bookings"
+def get_total_price(packages)
+    result = 0
+    packages.each do|package|
+        result += package.price
+    end
+    result
+end
+
+puts "Final bookings:"
 display_all_packages($booking)
+if $booking == []
+    puts "You have booked nothing"
+end
+
+puts " total price of your package is $#{get_total_price($booking)}."

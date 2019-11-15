@@ -1,3 +1,9 @@
+
+require "colorize"
+require "tty-prompt"
+
+prompt = TTY::Prompt.new
+
 class Package
     attr_accessor :name, :price
     def initialize(name, price)
@@ -48,11 +54,11 @@ program_running = true
 while program_running
 
     puts "Please type display to see all the options and then select a number to choose the package type.You can also type exit to exit "
-    puts "1. Signature"
-    puts "2. Super Saver"
-    puts "3. Cinematography"
-    puts "exit. To exit"
-    package_type_choice = gets.chomp
+    
+    package_type_choice = prompt.select("choose your package", ["Signature", "Super Saver","Cinematography","display","exit"])
+
+    
+    
 
     case package_type_choice
     when "display"
@@ -64,11 +70,11 @@ while program_running
 
         puts "Displaying cinematography packages"
         display_all_packages(Cinematography_package)
-    when "1"
+    when "Signature"
         adding(Signature_package)
-    when "2"
+    when "Super Saver"
         adding(Super_saver_package)
-    when "3"
+    when "Cinematography"
         adding(Cinematography_package)
     when "exit"
         program_running = false
