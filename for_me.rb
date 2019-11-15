@@ -35,27 +35,27 @@ def display_all_packages (packages)
 
 end
 
-def adding (packages)
+def adding (packages, booking)# as we are not putting booking as aglobal one we made a perameter. it is because of testing.
     packages.each_with_index do |package, index|
         puts "#{index+1} #{package.name} and $#{package.price}"
     end
-    puts "Please Select a number to lock the package OR type exit to exit?"
+    puts "Please type a number to lock the package OR type exit to exit?"
       input = gets.chomp
 if input != "exit"
       selected_package = packages[input.to_i-1]
-      $booking << selected_package
+      booking << selected_package
 end
       
 end
 
-$booking = []
+booking = []
 program_running = true
 
 while program_running
 
-    puts "Please type display to see all the options and then select a number to choose the package type.You can also type exit to exit "
+    puts "Please select display to see all the packages and then select a number to choose the package type.You can select exit to exit "
     
-    package_type_choice = prompt.select("choose your package", ["Signature", "Super Saver","Cinematography","display","exit"])
+    package_type_choice = prompt.select("choose your package", ["display","Signature","Super Saver","Cinematography","exit"])
 
     
     
@@ -71,11 +71,11 @@ while program_running
         puts "Displaying cinematography packages"
         display_all_packages(Cinematography_package)
     when "Signature"
-        adding(Signature_package)
+        adding(Signature_package, booking)
     when "Super Saver"
-        adding(Super_saver_package)
+        adding(Super_saver_package, booking)
     when "Cinematography"
-        adding(Cinematography_package)
+        adding(Cinematography_package, booking)
     when "exit"
         program_running = false
     else
@@ -83,9 +83,6 @@ while program_running
     end
 end
 
-#time and date
-#time=[10.00-02.00]
-#price
 def get_total_price(packages)
     result = 0
     packages.each do|package|
@@ -95,9 +92,9 @@ def get_total_price(packages)
 end
 
 puts "Final bookings:"
-display_all_packages($booking)
-if $booking == []
+display_all_packages(booking)
+if booking == []
     puts "You have booked nothing"
 end
 
-puts " total price of your package is $#{get_total_price($booking)}."
+puts " total price of your package is $#{get_total_price(booking)}."
