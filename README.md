@@ -20,8 +20,8 @@ User can simply log into their computer. Then just go to "SA PHOTOGRAPHY" app.
 * Signature Packages
 * Super Saver Packages
 * Wedding Film Packages
-3. After selecting one option from above user will have three another options for each selected ones. 
-        4.##############################
+3. After selecting one option from above user will see another three options for each selected ones. 
+        4.Once the user is done with selections#####################
 
 
 ## Features
