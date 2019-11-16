@@ -15,20 +15,7 @@ def test_signature_package
     
 end
 
-def test_booking
-    
-    display_all_packages($booking)
-    expected_result = 1000
-    actual_result = get_total_price($booking)
-    if expected_result == actual_result
-        puts "pass"
-    else
-       puts "fail"
-    end
-    
-end
-
 test_signature_package
-test_booking
+
 
 
