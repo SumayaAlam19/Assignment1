@@ -7,9 +7,12 @@ class Package
 end
 
 def display_all_packages (packages)
+    result = ""
     packages.each do |package|
-        puts" #{package.name} and $#{package.price}"
+        #" #{package.name} and $#{package.price}"
+        result += " #{package.name} and $#{package.price}\n"
     end
+    result
 
 end
 

@@ -39,13 +39,13 @@ while program_running
     case package_type_choice
     when "display"
         puts "Displaying signature packages"
-        display_all_packages(Signature_package)
+       puts display_all_packages(Signature_package)
 
         puts "Displaying super saver packages"
-        display_all_packages(Super_saver_package)
+        puts display_all_packages(Super_saver_package)
 
         puts "Displaying cinematography packages"
-        display_all_packages(Cinematography_package)
+        puts display_all_packages(Cinematography_package)
     when "Signature"
         adding(Signature_package, booking)
     when "Super Saver"
@@ -61,10 +61,35 @@ end
 
 
 
-puts "Final bookings:"
-display_all_packages(booking)
-if booking == []
-    puts "You have booked nothing"
-end
+# puts "Final bookings:"
+# display_all_packages(booking)
+# if booking == []
+#     puts "You have booked nothing"
+# end
 
-puts " total price of your package is $#{get_total_price(booking)}."
+# puts " total price of your package is $#{get_total_price(booking)}."
+
+def printed_reciept (booking)
+    reciept = "final booking is #{display_all_packages(booking)}"
+    if booking == []
+    reciept  += "You have booked nothing"
+    else 
+        reciept += " total price of your package is $#{get_total_price(booking)}."
+    end
+    reciept 
+end
+customer_reciept = printed_reciept(booking)
+puts customer_reciept
+
+
+
+
+
+
+
+
+
+
+
+
+
