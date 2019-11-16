@@ -12,4 +12,7 @@ tried to add some more features as selecting time and date. Discussed about this
 day 3 
 Starting with testing.
 Will split the Software_Development_plan(for_me file for now) file to make it work with test file. 
+Sorted out one testing method and working on another.
+All the methods of the code are not eligible for testing and as we need to do at least 2 testing I talked with senior dev.
+So I have to make another method which will show up a receipt for customer.
 

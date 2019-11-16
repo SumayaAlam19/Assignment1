@@ -1,0 +1,4 @@
+final booking is:
+ Elegant 1 and $600
+ Super Saver 1 and $300
+ total price of your package is $900.

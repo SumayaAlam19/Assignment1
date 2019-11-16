@@ -69,17 +69,21 @@ end
 
 # puts " total price of your package is $#{get_total_price(booking)}."
 
-def printed_reciept (booking)
-    reciept = "final booking is #{display_all_packages(booking)}"
+def printed_receipt(booking)
+    receipt = "final booking is:\n#{display_all_packages(booking)}"
     if booking == []
-    reciept  += "You have booked nothing"
+    receipt  += "You have booked nothing"
     else 
-        reciept += " total price of your package is $#{get_total_price(booking)}."
+        receipt += " total price of your package is $#{get_total_price(booking)}."
     end
-    reciept 
+    receipt 
 end
-customer_reciept = printed_reciept(booking)
-puts customer_reciept
+customer_receipt = printed_receipt(booking)
+puts customer_receipt
+
+
+writing_receipt_to_file(customer_receipt)
+ 
 
 
 

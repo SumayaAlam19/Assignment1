@@ -27,14 +27,25 @@ User can simply log into their computer. Then just go to "SA PHOTOGRAPHY" app.
 
 ## Features
 There are some features I want to share here which are as below  
-1. Choosing package  
-2. Selecting time 
-3. Selecting date
-4. Making bookings 
-####Choosing packages: 
-User can choose packages from the given options. They can see the prices while they are choosing. User will have multiple options in chosen package and will be able to select one from them. 
+1. Display packages. 
+2. Select packages.
+3. Making a booking.display summ of book
 
-##Selecting
+####Display packages: 
+User can display packages from the given options. They can see the names and prices of all packages. User will see multiple options in each packages. 
+For this feature I have used method called "display_all_packages" which created a concept of variable scope. Used the each loop. So this method will loop over all the packages and will show all the options of the packages. Used variable containing string.
+
+####Select packages:
+In this section user will be told to select a number to choose their package of photography. Then they will just have to type the number and select one.
+For this feature I have used method called "adding" and used the each_with_index loop. In method its creating a concept of variable scope. I used case as conditional control structure. 
+
+####Making a booking:I this app user can make a booking. To make a booking user can select one or more packages and book them together. I used a method called "printed_receipt" which comes up with the name of the packages the user selected and also shows the total price of the packages. 
+
+error handling#################################??????????
+
+if there is a error while you were saving a file it can be handled by printing an error to the screen.
+
+
 
 
 

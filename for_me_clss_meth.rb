@@ -37,3 +37,10 @@ def get_total_price(packages)
     result
 end
 
+def writing_receipt_to_file(customer_receipt)
+    begin 
+        File.write("receipt.txt",customer_receipt) #this is how i created a file
+    rescue StandardError => exception
+        puts "failed to save receipt: #{exception}"
+    end
+end

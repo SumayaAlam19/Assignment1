@@ -17,5 +17,20 @@ end
 
 test_signature_package
 
+def test_writing_receipt
+    if File.exist?("receipt.txt")
+        File.delete("receipt.txt")
+    end
+
+    writing_receipt_to_file("our test fake receipt")
+    if  File.exists?("receipt.txt") 
+        puts "pass"
+    else
+       puts "fail"
+    end
+end
+
+test_writing_receipt
+
 
 
