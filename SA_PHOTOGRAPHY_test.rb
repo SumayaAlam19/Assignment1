@@ -1,6 +1,6 @@
 #testing
 
-require_relative "for_me_clss_meth"
+require_relative "SA_PHOTOGRAPHY_clss"
 
 
 def test_signature_package

@@ -1,4 +1,4 @@
-require_relative "for_me_clss_meth"
+require_relative "SA_PHOTOGRAPHY_clss"
 require "colorize"
 require "tty-prompt"
 
@@ -27,11 +27,13 @@ Cinematography_package = [Package.new("Standard 1", 650), Package.new("Standard 
 booking = []
 program_running = true
 
-while program_running
 
-    puts "Please select display to see all the packages and then select a number to choose the package type.You can select exit to exit "
+while program_running
+    puts "Welcome to SA PHOTOGRAPHY".colorize(:blue)
+
+    puts "Please select display to see all the packages or select a package name to choose the package.You can select exit to exit. ".colorize(:blue)
     
-    package_type_choice = prompt.select("choose your package", ["display","Signature","Super Saver","Cinematography","exit"])
+    package_type_choice = prompt.select("Select below", ["display","Signature","Super Saver","Cinematography","exit"])
 
     
     
@@ -70,16 +72,16 @@ end
 # puts " total price of your package is $#{get_total_price(booking)}."
 
 def printed_receipt(booking)
-    receipt = "final booking is:\n#{display_all_packages(booking)}"
+    receipt = "Final booking is:\n#{display_all_packages(booking)}"
     if booking == []
     receipt  += "You have booked nothing"
     else 
-        receipt += " total price of your package is $#{get_total_price(booking)}."
+        receipt += " Total price of your package is $#{get_total_price(booking)}."
     end
     receipt 
 end
 customer_receipt = printed_receipt(booking)
-puts customer_receipt
+puts customer_receipt.colorize(:blue)
 
 
 writing_receipt_to_file(customer_receipt)

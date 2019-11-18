@@ -47,6 +47,14 @@ In this app user can make a booking. To make a booking user can select one or mo
 
 If there is an error while you were saving a file it can be handled by printing an error to the screen.
 
+## T1A2-3 User Interaction and Experience
+Once the user is in SA PHOTOGRAPHY app, they can navigate to the packages they would like to choose by keying on the corresponding package or they can display all the packages by selecting display. The last option will allow user to select exit to exit. Once they exit, they can choose more packages if they want or they can just simply exit by selecting exit. When a user selects any package it comes up with three more options which is three different types of that package. Then user can just type the number of the package to choose one. In this way user can choose multiple packages. Once the selection is done, user will see a booking receipt which will show the names of the packages user selected and also they will see the total cost of the booked packages.
+
+## T1A2-7 Implement Application
+Please run application in terminal: ruby SA_PHOTOGRAPHY.rb
+
+
+
 
 
 
