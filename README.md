@@ -53,6 +53,8 @@ If user will type other numbers than the number showed in the application, the p
 
 ## T1A2-4 Control Flow Diagram
 Please click [SA_PHOTOGRAPHY_flowchart](SA_PHOTOGRAPHY_flowchart.pdf) to see the control flow diagram.
+Please click [SA_PHOTOGRAPHY_flowchart](SA_PHOTOGRAPHY_flowchart.png.docx) to see the control flow diagram.
+
 
 Key for control flow diagram is as below:
 * Circle - Initiation or termination of application
@@ -79,11 +81,30 @@ Please run application in terminal: ruby SA_PHOTOGRAPHY.rb
 
 ## T1A2-10  ##############################
 ## T1A2-11 Help File 
+
 **Installation**
-First of all you need a desktop or a laptop computer to run this application. A mobile or a tablet is not suitable for this. Then installation of ruby 2.5.1 version is needed. 
+First of all you need a desktop or a laptop computer to run this application. A mobile or a tablet is not suitable for this. 
+
+Windows:
+* To download Ubuntu go to https://www.microsoft.com/en-us/p/ubuntu-1804-lts/9n9tngvndl3q?activetab=pivot:overviewtab
+
+* In PowerShell running as Admin
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+
+* If it's complaining about the feature not being enabled.
+
+* In the Ubuntu window run the following: apt policy ruby
+
+* If the output looks like this: 
+ruby:Candidate: 1:2.5.1
+
+* Then you are good to run: sudo apt install ruby
+
 * Open Terminal app
+
 * Clone [Git repository](git@github.com:SumayaAlam19/Assignment1.git)###############################
-* Run SA_Photography.rb
+* Run SA_Photography.rb in Terminal
+
 **Dependencies required by the application to operate:**
 To run  this application following installations are needed
 * sudo gem install colorize
