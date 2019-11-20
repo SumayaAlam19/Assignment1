@@ -23,14 +23,12 @@ Cinematography_package = [Package.new("Standard 1", 650), Package.new("Standard 
 
 
 
-
+puts "Welcome to SA PHOTOGRAPHY".colorize(:blue)
 booking = []
 program_running = true
 
 
 while program_running
-    puts "Welcome to SA PHOTOGRAPHY".colorize(:blue)
-
     puts "Please select display to see all the packages or select a package name to choose the package.You can select exit to exit. ".colorize(:blue)
     
     package_type_choice = prompt.select("Select below", ["display","Signature","Super Saver","Cinematography","exit"])

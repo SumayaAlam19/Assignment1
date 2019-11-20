@@ -1,2 +1,3 @@
 Final booking is:
-You have booked nothing
+ Elegant 1 and $600
+ Total price of your package is $600.

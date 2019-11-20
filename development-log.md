@@ -1,13 +1,15 @@
 Development Log
 14/11/2019
-Wrote the statement of purpose and scope.
-Wrote the features
-I am working on my code now. I have done the part of displaying all the packages and the part of selecting packages.
-I will be working on feature selecting "date and time. "
-Used gem (colorize)
+First I wrote the statement of purpose and scope where I mentioned about what the application will do, what will be the main features, who will be the target audience and what type of problem this application may solve.
+First I added the features which were Display packages, Select packages, Display the time and date and Display the summary of booking.
+Started working on my code which started with a package class. Then made new objects of the class where I used some arrays. To display the the whole package I made a method called "display_all_packages" and to select packages  or display or exit I used tty-prompt gem. Also I used gem "colorize".
+I will be working on feature "selecting date and time " and on feature "Display the summary of booking".
+Also added some task on trello to follow.
+123
+
 
 15/11/2019 
-Tried to add some more features as selecting time and date. Discussed about this with senior dev and we decided not to add any new things at this point. so for now the features will be selecting packages,displaying packages, making a booking and having the  total price.
+Tried to add some more features as selecting time and date. Discussed about this with senior dev and we decided not to add any new things at this point as I have a lot more to do with my assignment. So for now the features will be selecting packages,displaying packages, making a booking and having the  total price.
 
 16/11/2019 
 Starting with testing.
