@@ -52,8 +52,13 @@ Once the user is in SA PHOTOGRAPHY app, they can navigate to the packages they w
 If user will type other numbers than the number showed in the application, the program will throw an error. The user needs to type the number from the given ones. As example, to select a package with cost user have to type the number 1 or 2 or 3.
 
 ## T1A2-4 Control Flow Diagram
-Please click 
+Please click [SA_PHOTOGRAPHY_flowchart](SA_PHOTOGRAPHY_flowchart.png.docx) to see the control flow diagram.
 
+## T1A2-5
+
+
+## T1A2-6 Status Updates
+To see my status updates please click [here](/development-log.md)
 
 
 
@@ -63,7 +68,7 @@ Please run application in terminal: ruby SA_PHOTOGRAPHY.rb
 
 
 
-here are my [two status updates](/development-log.md)########################
+
 
 
 
