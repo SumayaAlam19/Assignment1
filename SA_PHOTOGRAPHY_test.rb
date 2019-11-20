@@ -1,4 +1,4 @@
-#testing
+
 
 require_relative "SA_PHOTOGRAPHY_clss"
 

@@ -52,9 +52,16 @@ Once the user is in SA PHOTOGRAPHY app, they can navigate to the packages they w
 If user will type other numbers than the number showed in the application, the program will throw an error. The user needs to type the number from the given ones. As example, to select a package with cost user have to type the number 1 or 2 or 3.
 
 ## T1A2-4 Control Flow Diagram
-Please click [SA_PHOTOGRAPHY_flowchart](SA_PHOTOGRAPHY_flowchart.png.docx) to see the control flow diagram.
+Please click [SA_PHOTOGRAPHY_flowchart](SA_PHOTOGRAPHY_flowchart.pdf) to see the control flow diagram.
 
-## T1A2-5
+Key for control flow diagram is as below:
+* Circle - Initiation or termination of application
+* Rectangle - Indicates process
+* Parallelogram - Indicates an input 
+* Diamond - Indicates decision
+* -----> - Indicates direction of the flow
+
+## T1A2-5 ########################
 
 
 ## T1A2-6 Status Updates
@@ -64,6 +71,68 @@ To see my status updates please click [here](/development-log.md)
 
 ## T1A2-7 Implement Application
 Please run application in terminal: ruby SA_PHOTOGRAPHY.rb
+
+## T1A2-8 DRY (Don’t Repeat Yourself) coding principles
+Please run application in terminal: ruby SA_PHOTOGRAPHY.rb
+
+## T1A2-9 #########################
+
+## T1A2-10  ##############################
+## T1A2-11 Help File 
+**Installation**
+First of all you need a desktop or a laptop computer to run this application. A mobile or a tablet is not suitable for this. Then installation of ruby 2.5.1 version is needed. 
+* Open Terminal app
+* Clone [Git repository](git@github.com:SumayaAlam19/Assignment1.git)###############################
+* Run SA_Photography.rb
+**Dependencies required by the application to operate:**
+To run  this application following installations are needed
+* sudo gem install colorize
+* sudo gem install TTY-Prompt
+
+**Features** ##########################
+
+## T1A2-12 Test Application
+
+**Test 1**
+def test_signature_package
+    signature_package = [Package.new("Elegant 1", 600), Package.new("Elegant 2", 800), Package.new("Elegant 3", 950)]
+    expected_result = 2350
+    actual_result = get_total_price(signature_package)
+    if expected_result == actual_result
+        puts "pass"
+    else
+       puts "fail"
+    end
+    
+end
+
+test_signature_package tests the total price of all the package types in signature_package. If the actual result matches the expected result it is a pass else it is a fail.
+
+**Test 2**
+def test_writing_receipt
+    if File.exist?("receipt.txt")
+        File.delete("receipt.txt")
+    end
+
+    writing_receipt_to_file("our test fake receipt")
+    if  File.exists?("receipt.txt") 
+        puts "pass"
+    else
+       puts "fail"
+    end
+end
+
+test_writing_receipt tests if the file exists it is a pass else fail.
+
+
+
+
+
+
+
+
+
+
 
 
 
