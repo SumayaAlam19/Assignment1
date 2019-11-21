@@ -107,7 +107,14 @@ To run  this application following installations are needed
 * sudo gem install colorize
 * sudo gem install tty-prompt
 
-**Features** ##########################
+**Features** 
+In method display_all_packages (packages)
+it is looping over the packages name and prices.
+    
+In the method adding (packages, booking)
+packages and booking are the parameters.
+in this method it pushes packages untill the user exits.
+
 
 ## T1A2-12 Test Application
 
@@ -120,6 +127,18 @@ test_signature_package tests the total price of all the package types in signatu
 test_writing_receipt tests if the file exists it is a pass else it is a fail. I used it when it comes up with the booking receipt.
 
 ## T1A2-13 
+
+## T1A2-14 
+As a project management platform to track the development of the application I used trello. Here are some screenshots of trello work as below:
+
+![trello_1](docs/trello1.png)
+![trello_2](docs/trello2.png)
+![trello_3](docs/trello3.png)
+![trello_4](docs/trello4.png)
+![trello_5](docs/trello5.png)
+
+## T1A2-15 Scripting
+Please go [here](build.sh)
 
 
 
