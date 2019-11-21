@@ -53,7 +53,7 @@ If user will type other numbers than the number showed in the application, the p
 
 ## T1A2-4 Control Flow Diagram
 Here is the Control Flow Diagram
- ![SA_PHOTOGRAPHY_flowchart](SA_PHOTOGRAPHY.flowchart.png) 
+ ![SA_PHOTOGRAPHY_flowchart](docs/SA_PHOTOGRAPHY.flowchart.png) 
 
 
 
@@ -64,24 +64,18 @@ Key for control flow diagram is as below:
 * Diamond - Indicates decision
 * -----> - Indicates direction of the flow
 
-## T1A2-5 ########################
+## T1A2-5 Implementation plan
+
+Here is the table of implementation plan below
+
+![Table](docs/table.png)
 
 
 ## T1A2-6 Status Updates
 To see my status updates please click [here](development-log.md)
 
 
-
-## T1A2-7 Implement Application
-Please run application in terminal: ruby SA_PHOTOGRAPHY.rb
-
-## T1A2-8 DRY (Don’t Repeat Yourself) coding principles
-Please run application in terminal: ruby SA_PHOTOGRAPHY.rb
-
-## T1A2-9 #########################
-
-## T1A2-10  ##############################
-## T1A2-11 Help File 
+## T1A2-11 help file
 
 **Installation**
 First of all you need a desktop or a laptop computer to run this application. A mobile or a tablet is not suitable for this. 
@@ -105,7 +99,7 @@ ruby:Candidate: 1:2.5.1
 
 * Clone [Git repository](https://github.com/SumayaAlam19/Assignment1)
 run build.sh 
-change to the dist folder
+* change to the dist folder
 * Run SA_Photography.rb in Terminal
 
 **Dependencies required by the application to operate:**
