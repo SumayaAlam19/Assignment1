@@ -78,27 +78,13 @@ To see my status updates please click [here](development-log.md)
 ## T1A2-11 help file
 
 **Installation**
-First of all you need a desktop or a laptop computer to run this application. A mobile or a tablet is not suitable for this. 
+First of all you need a desktop or a laptop computer to run this application. A mobile or a tablet is not suitable for this. Please make sure you have ruby 2.5.1 version.
 
-Windows:
-* To download Ubuntu go to https://www.microsoft.com/en-us/p/ubuntu-1804-lts/9n9tngvndl3q?activetab=pivot:overviewtab
-
-* In PowerShell running as Admin
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-
-* If it's complaining about the feature not being enabled.
-
-* In the Ubuntu window run the following: apt policy ruby
-
-* If the output looks like this: 
-ruby:Candidate: 1:2.5.1
-
-* Then you are good to run: sudo apt install ruby
 
 * Open Terminal app
 
 * Clone [Git repository](https://github.com/SumayaAlam19/Assignment1)
-run build.sh 
+* run build.sh 
 * change to the dist folder
 * Run SA_Photography.rb in Terminal
 
@@ -125,8 +111,7 @@ test_signature_package tests the total price of all the package types in signatu
 **Test 2**
 
 test_writing_receipt tests if the file exists it is a pass else it is a fail. I used it when it comes up with the booking receipt.
-
-## T1A2-13 
+ 
 
 ## T1A2-14 
 As a project management platform to track the development of the application I used trello. Here are some screenshots of trello work as below:
