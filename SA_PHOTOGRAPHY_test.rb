@@ -1,7 +1,4 @@
-
-
 require_relative "SA_PHOTOGRAPHY_clss"
-
 
 def test_signature_package
     signature_package = [Package.new("Elegant 1", 600), Package.new("Elegant 2", 800), Package.new("Elegant 3", 950)]
@@ -10,7 +7,7 @@ def test_signature_package
     if expected_result == actual_result
         puts "pass"
     else
-       puts "fail"
+        puts "fail"
     end
     
 end
@@ -26,11 +23,8 @@ def test_writing_receipt
     if  File.exists?("receipt.txt") 
         puts "pass"
     else
-       puts "fail"
+        puts "fail"
     end
 end
 
 test_writing_receipt
-
-
-

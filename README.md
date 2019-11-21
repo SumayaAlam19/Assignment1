@@ -1,6 +1,6 @@
-#Assignment-2
-#The Terminal App
-#SA PHOTOGRAPHY
+# SA PHOTOGRAPHY
+## Assignment-2 The Terminal App
+**Sumaya Alam-2019**
 ## T1A2-1 Statement of Purpose and Scope
 **What this app will do:**
 The *SA PHOTOGRAPHY* is a terminal application where It allows  to choose or book photography sessions which is about capturing moments of your life. The packages it shows can be either of taking pictures or of taking videos. This app will allow you to book a session for different types of photo shoots and will let you know about the costs as well. So first it will allow you to display the packages and then you can select one or more packages and then finally you will be able to see your booked sessions and its total cost.
