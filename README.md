@@ -68,7 +68,7 @@ Key for control flow diagram is as below:
 
 
 ## T1A2-6 Status Updates
-To see my status updates please click [here](/development-log.md)
+To see my status updates please click [here](development-log.md)
 
 
 
