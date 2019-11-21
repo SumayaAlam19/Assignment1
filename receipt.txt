@@ -1,3 +1,4 @@
 Final booking is:
  Elegant 1 and $600
- Total price of your package is $600.
+ Standard 2 and $750
+ Total price of your package is $1350.

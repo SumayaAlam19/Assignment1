@@ -9,14 +9,13 @@ end
 def display_all_packages (packages)
     result = ""
     packages.each do |package|
-        #" #{package.name} and $#{package.price}"
         result += " #{package.name} and $#{package.price}\n"
     end
     result
 
 end
 
-def adding (packages, booking)# as we are not putting booking as aglobal one we made a perameter. it is because of testing.
+def adding (packages, booking)
     packages.each_with_index do |package, index|
         puts "#{index+1} #{package.name} and $#{package.price}"
     end
